@@ -1,0 +1,52 @@
+2018-08-28T08:23:08.644Z - normal: Load ~/.CocosCreator/settings.json
+2018-08-28T08:23:08.648Z - normal: checking language setting...
+2018-08-28T08:23:08.648Z - normal: Language: zh
+2018-08-28T08:23:09.350Z - success: protocol editor-framework registered
+2018-08-28T08:23:09.350Z - success: protocol app registered
+2018-08-28T08:23:09.350Z - success: protocol theme registered
+2018-08-28T08:23:09.350Z - success: protocol packages registered
+2018-08-28T08:23:09.351Z - success: protocol unpack registerred
+2018-08-28T08:23:09.351Z - success: protocol disable-commonjs registerred
+2018-08-28T08:23:09.584Z - normal: connected!
+2018-08-28T08:23:09.588Z - normal: Check project /Users/wangliugen/Desktop/SelfProject/Cocos2dJSProject/FirstGameCocosProject
+2018-08-28T08:23:09.599Z - normal: Initializing Cocos2d
+2018-08-28T08:23:09.807Z - normal: Initializing Asset Database
+2018-08-28T08:23:09.836Z - success: protocol uuid registerred
+2018-08-28T08:23:09.836Z - success: protocol db registerred
+2018-08-28T08:23:09.836Z - success: protocol thumbnail registerred
+2018-08-28T08:23:09.836Z - normal: Loading editor/builtin packages
+2018-08-28T08:23:09.855Z - success: anysdk loaded
+2018-08-28T08:23:09.972Z - success: assets loaded
+2018-08-28T08:23:09.976Z - success: builder loaded
+2018-08-28T08:23:09.978Z - success: cocos-analytics loaded
+2018-08-28T08:23:09.983Z - success: console loaded
+2018-08-28T08:23:09.987Z - success: hierarchy loaded
+2018-08-28T08:23:09.992Z - success: inspector loaded
+2018-08-28T08:23:09.994Z - success: keystore loaded
+2018-08-28T08:23:09.999Z - success: node-library loaded
+2018-08-28T08:23:10.001Z - success: package-asset loaded
+2018-08-28T08:23:10.003Z - success: preferences loaded
+2018-08-28T08:23:10.006Z - success: project-exporter loaded
+2018-08-28T08:23:10.021Z - success: project-importer loaded
+2018-08-28T08:23:10.024Z - success: project-settings loaded
+2018-08-28T08:23:10.028Z - success: ui-kit loaded
+2018-08-28T08:23:10.033Z - success: ui-grid loaded
+2018-08-28T08:23:10.038Z - success: scene loaded
+2018-08-28T08:23:10.040Z - success: sprite-editor loaded
+2018-08-28T08:23:10.044Z - success: store loaded
+2018-08-28T08:23:10.050Z - success: timeline loaded
+2018-08-28T08:23:10.050Z - normal: Loading builtin packages
+2018-08-28T08:23:10.054Z - success: asset-db-debugger loaded
+2018-08-28T08:23:10.055Z - success: color-picker loaded
+2018-08-28T08:23:10.059Z - success: package-manager loaded
+2018-08-28T08:23:10.063Z - success: sdkbox loaded
+2018-08-28T08:23:10.068Z - success: tester loaded
+2018-08-28T08:23:10.073Z - success: ui-kit-preview-extra loaded
+2018-08-28T08:23:10.077Z - success: ui-kit-preview loaded
+2018-08-28T08:23:10.080Z - success: ui-tree loaded
+2018-08-28T08:23:11.016Z - normal: Initializing project /Users/wangliugen/Desktop/SelfProject/Cocos2dJSProject/FirstGameCocosProject
+2018-08-28T08:23:11.017Z - normal: Loading packages
+2018-08-28T08:23:11.023Z - normal: Watching packages
+2018-08-28T08:23:11.033Z - normal: Run Application
+2018-08-28T08:23:11.711Z - success: preview server running at http://localhost:7456
+2018-08-28T08:23:15.608Z - normal: 1.8.0
