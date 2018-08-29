@@ -1,52 +1,53 @@
-2018-08-28T08:23:08.644Z - normal: Load ~/.CocosCreator/settings.json
-2018-08-28T08:23:08.648Z - normal: checking language setting...
-2018-08-28T08:23:08.648Z - normal: Language: zh
-2018-08-28T08:23:09.350Z - success: protocol editor-framework registered
-2018-08-28T08:23:09.350Z - success: protocol app registered
-2018-08-28T08:23:09.350Z - success: protocol theme registered
-2018-08-28T08:23:09.350Z - success: protocol packages registered
-2018-08-28T08:23:09.351Z - success: protocol unpack registerred
-2018-08-28T08:23:09.351Z - success: protocol disable-commonjs registerred
-2018-08-28T08:23:09.584Z - normal: connected!
-2018-08-28T08:23:09.588Z - normal: Check project /Users/wangliugen/Desktop/SelfProject/Cocos2dJSProject/FirstGameCocosProject
-2018-08-28T08:23:09.599Z - normal: Initializing Cocos2d
-2018-08-28T08:23:09.807Z - normal: Initializing Asset Database
-2018-08-28T08:23:09.836Z - success: protocol uuid registerred
-2018-08-28T08:23:09.836Z - success: protocol db registerred
-2018-08-28T08:23:09.836Z - success: protocol thumbnail registerred
-2018-08-28T08:23:09.836Z - normal: Loading editor/builtin packages
-2018-08-28T08:23:09.855Z - success: anysdk loaded
-2018-08-28T08:23:09.972Z - success: assets loaded
-2018-08-28T08:23:09.976Z - success: builder loaded
-2018-08-28T08:23:09.978Z - success: cocos-analytics loaded
-2018-08-28T08:23:09.983Z - success: console loaded
-2018-08-28T08:23:09.987Z - success: hierarchy loaded
-2018-08-28T08:23:09.992Z - success: inspector loaded
-2018-08-28T08:23:09.994Z - success: keystore loaded
-2018-08-28T08:23:09.999Z - success: node-library loaded
-2018-08-28T08:23:10.001Z - success: package-asset loaded
-2018-08-28T08:23:10.003Z - success: preferences loaded
-2018-08-28T08:23:10.006Z - success: project-exporter loaded
-2018-08-28T08:23:10.021Z - success: project-importer loaded
-2018-08-28T08:23:10.024Z - success: project-settings loaded
-2018-08-28T08:23:10.028Z - success: ui-kit loaded
-2018-08-28T08:23:10.033Z - success: ui-grid loaded
-2018-08-28T08:23:10.038Z - success: scene loaded
-2018-08-28T08:23:10.040Z - success: sprite-editor loaded
-2018-08-28T08:23:10.044Z - success: store loaded
-2018-08-28T08:23:10.050Z - success: timeline loaded
-2018-08-28T08:23:10.050Z - normal: Loading builtin packages
-2018-08-28T08:23:10.054Z - success: asset-db-debugger loaded
-2018-08-28T08:23:10.055Z - success: color-picker loaded
-2018-08-28T08:23:10.059Z - success: package-manager loaded
-2018-08-28T08:23:10.063Z - success: sdkbox loaded
-2018-08-28T08:23:10.068Z - success: tester loaded
-2018-08-28T08:23:10.073Z - success: ui-kit-preview-extra loaded
-2018-08-28T08:23:10.077Z - success: ui-kit-preview loaded
-2018-08-28T08:23:10.080Z - success: ui-tree loaded
-2018-08-28T08:23:11.016Z - normal: Initializing project /Users/wangliugen/Desktop/SelfProject/Cocos2dJSProject/FirstGameCocosProject
-2018-08-28T08:23:11.017Z - normal: Loading packages
-2018-08-28T08:23:11.023Z - normal: Watching packages
-2018-08-28T08:23:11.033Z - normal: Run Application
-2018-08-28T08:23:11.711Z - success: preview server running at http://localhost:7456
-2018-08-28T08:23:15.608Z - normal: 1.8.0
+2018-08-29T03:29:09.246Z - normal: Load ~/.CocosCreator/settings.json
+2018-08-29T03:29:09.250Z - normal: checking language setting...
+2018-08-29T03:29:09.250Z - normal: Language: zh
+2018-08-29T03:29:09.937Z - success: protocol editor-framework registered
+2018-08-29T03:29:09.938Z - success: protocol app registered
+2018-08-29T03:29:09.938Z - success: protocol theme registered
+2018-08-29T03:29:09.938Z - success: protocol packages registered
+2018-08-29T03:29:09.938Z - success: protocol unpack registerred
+2018-08-29T03:29:09.938Z - success: protocol disable-commonjs registerred
+2018-08-29T03:29:11.323Z - normal: connected!
+2018-08-29T03:29:11.325Z - normal: Check project /Users/wangliugen/Desktop/SelfProject/Cocos2dJSProject/FirstGameCocosProject
+2018-08-29T03:29:11.326Z - normal: Initializing Cocos2d
+2018-08-29T03:29:11.500Z - normal: Initializing Asset Database
+2018-08-29T03:29:11.538Z - success: protocol uuid registerred
+2018-08-29T03:29:11.538Z - success: protocol db registerred
+2018-08-29T03:29:11.538Z - success: protocol thumbnail registerred
+2018-08-29T03:29:11.538Z - normal: Loading editor/builtin packages
+2018-08-29T03:29:11.558Z - success: anysdk loaded
+2018-08-29T03:29:11.671Z - success: assets loaded
+2018-08-29T03:29:11.675Z - success: builder loaded
+2018-08-29T03:29:11.677Z - success: cocos-analytics loaded
+2018-08-29T03:29:11.682Z - success: console loaded
+2018-08-29T03:29:11.688Z - success: hierarchy loaded
+2018-08-29T03:29:11.693Z - success: inspector loaded
+2018-08-29T03:29:11.695Z - success: keystore loaded
+2018-08-29T03:29:11.699Z - success: node-library loaded
+2018-08-29T03:29:11.702Z - success: package-asset loaded
+2018-08-29T03:29:11.704Z - success: preferences loaded
+2018-08-29T03:29:11.708Z - success: project-exporter loaded
+2018-08-29T03:29:11.725Z - success: project-importer loaded
+2018-08-29T03:29:11.729Z - success: project-settings loaded
+2018-08-29T03:29:11.732Z - success: ui-kit loaded
+2018-08-29T03:29:11.737Z - success: ui-grid loaded
+2018-08-29T03:29:11.741Z - success: scene loaded
+2018-08-29T03:29:11.743Z - success: sprite-editor loaded
+2018-08-29T03:29:11.747Z - success: store loaded
+2018-08-29T03:29:11.753Z - success: timeline loaded
+2018-08-29T03:29:11.753Z - normal: Loading builtin packages
+2018-08-29T03:29:11.757Z - success: asset-db-debugger loaded
+2018-08-29T03:29:11.758Z - success: color-picker loaded
+2018-08-29T03:29:11.761Z - success: package-manager loaded
+2018-08-29T03:29:11.767Z - success: sdkbox loaded
+2018-08-29T03:29:11.771Z - success: tester loaded
+2018-08-29T03:29:11.776Z - success: ui-kit-preview-extra loaded
+2018-08-29T03:29:11.779Z - success: ui-kit-preview loaded
+2018-08-29T03:29:11.782Z - success: ui-tree loaded
+2018-08-29T03:29:12.751Z - normal: Initializing project /Users/wangliugen/Desktop/SelfProject/Cocos2dJSProject/FirstGameCocosProject
+2018-08-29T03:29:12.753Z - normal: Loading packages
+2018-08-29T03:29:12.758Z - normal: Watching packages
+2018-08-29T03:29:12.769Z - normal: Run Application
+2018-08-29T03:29:13.514Z - success: preview server running at http://localhost:7456
+2018-08-29T03:29:17.640Z - normal: 1.8.0
+2018-08-29T03:29:26.507Z - info: shutdown preview server
