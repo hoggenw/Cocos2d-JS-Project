@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "ff57d65a-6a02-44f3-bb57-0aa8c811a929",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "kai_450_xin_2": {
+      "ver": "1.0.3",
+      "uuid": "4e8aac33-92a6-4c55-af09-31cb70c7b51b",
+      "rawTextureUuid": "ff57d65a-6a02-44f3-bb57-0aa8c811a929",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 311,
+      "height": 70,
+      "rawWidth": 311,
+      "rawHeight": 70,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
