@@ -3,6 +3,7 @@
   "appSecret": "",
   "encryptJs": true,
   "excludeScenes": [],
+  "fb-instant-games": {},
   "includeAnySDK": false,
   "includeSDKBox": false,
   "inlineSpriteFrames": true,
@@ -20,18 +21,17 @@
   },
   "packageName": "org.cocos2d.SecondGame",
   "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
   "startScene": "d330fba6-b1a0-440b-92be-5ff32653f779",
   "title": "SecondGame",
   "webOrientation": "auto",
   "wechatgame": {
-    "appid": "",
-    "orientation": "portrait"
+    "appid": "wx49cf56c78841d294",
+    "orientation": "landscape"
   },
   "xxteaKey": "c58bea8b-4a2b-40",
-  "zipCompressJs": true,
-  "qqplay": {
-    "orientation": "portrait",
-    "REMOTE_SERVER_ROOT": ""
-  },
-  "fb-instant-games": {}
+  "zipCompressJs": true
 }

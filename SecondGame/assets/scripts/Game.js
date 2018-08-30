@@ -84,7 +84,7 @@ cc.Class({
     getNewStarPosition: function () {
         var randX = 0;
         // 根据地平面位置和主角跳跃高度，随机得到一个星星的 y 坐标
-        var randY = this.groundY + Math.random() * this.player.getComponent('Player').jumpHeight + 50;
+        var randY = this.groundY + Math.random() * this.player.getComponent('Player').jumpHeight + 20;
         // 根据屏幕宽度，随机得到一个星星 x 坐标
         var maxX = this.node.width/2;
         randX = (Math.random() - 0.5) * 2 * maxX;
