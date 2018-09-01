@@ -7,9 +7,7 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-
-import GameModel from "../Model/GameModel";
-
+import {GameModel} from "../Model/GameModel";
 cc.Class({
     extends: cc.Component,
 
@@ -34,8 +32,6 @@ cc.Class({
             type: cc.Node
         }
     },
-
-    // LIFE-CYCLE CALLBACKS:
 
     // use this for initialization
     onLoad: function () {

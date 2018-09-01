@@ -1,12 +1,3 @@
-// Learn cc.Class:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
 export const CELL_TYPE = {
     EMPTY : 0,
@@ -27,6 +18,7 @@ export const CELL_STATUS = {
     WRAP: "wrap",
     BIRD: "bird"
 }
+
 export const GRID_WIDTH = 9;
 export const GRID_HEIGHT = 9;
 
@@ -35,6 +27,7 @@ export const CELL_HEIGHT = 70;
 
 export const GRID_PIXEL_WIDTH = GRID_WIDTH * CELL_WIDTH;
 export const GRID_PIXEL_HEIGHT = GRID_HEIGHT * CELL_HEIGHT;
+
 
 // ********************   时间表  animation time **************************
 export const ANITIME = {
@@ -45,3 +38,5 @@ export const ANITIME = {
     BOMB_BIRD_DELAY: 0.7,
     DIE_SHAKE: 0.4 // 死前抖动
 }
+
+

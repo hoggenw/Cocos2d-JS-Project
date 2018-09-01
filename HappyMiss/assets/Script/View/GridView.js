@@ -1,6 +1,5 @@
-
-
 import {CELL_WIDTH, CELL_HEIGHT, GRID_PIXEL_WIDTH, GRID_PIXEL_HEIGHT, ANITIME} from '../Model/ConstValue';
+
 import AudioUtils from "../Utils/AudioUtils";
 
 cc.Class({
@@ -8,21 +7,15 @@ cc.Class({
 
     properties: {
         // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
+        //    default: null,      // The default value will be used only when the component attaching
+        //                           to a node for the first time
+        //    url: cc.Texture2D,  // optional, default is typeof default
+        //    serializable: true, // optional, default is true
+        //    visible: true,      // optional, default is true
+        //    displayName: 'Foo', // optional
+        //    readonly: false,    // optional, default is false
         // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
-
+        // ...
         aniPre: {
             default: [],
             type: [cc.Prefab]
@@ -35,6 +28,7 @@ cc.Class({
             type: AudioUtils,
             default: null
         }
+
     },
 
 
