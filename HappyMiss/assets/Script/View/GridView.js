@@ -49,10 +49,14 @@ cc.Class({
             this.cellViews[i] = [];
             for(var j = 1;j<=9;j++){
                 var type = cellsModels[i][j].type;
+                //创建预制节点
                 var aniView = cc.instantiate(this.aniPre[type]);
                 aniView.parent = this.node;
+                //预制节点关联js脚本
                 var cellViewScript = aniView.getComponent("CellView");
+                //f复制，最主要是定位，及动画
                 cellViewScript.initWithModel(cellsModels[i][j]);
+                //创建视图存入数组
                 this.cellViews[i][j] = aniView;
             }
         }

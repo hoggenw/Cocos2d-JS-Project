@@ -11,7 +11,9 @@ export default function GameModel(){
 
 GameModel.prototype.init = function(cellTypeNum){
     this.cells = [];
+    //生成本次视图的基本类型
     this.setCellTypeNum(cellTypeNum || this.cellTypeNum);
+    //生成本次视图基本单元模型
     for(var i = 1;i<=GRID_WIDTH;i++){
         this.cells[i] = [];
         for(var j = 1;j <= GRID_HEIGHT;j++){
@@ -22,8 +24,10 @@ GameModel.prototype.init = function(cellTypeNum){
     for(var i = 1;i<=GRID_WIDTH;i++){
         for(var j = 1;j <= GRID_HEIGHT;j++){
             let flag = true;
+            //如果flag为true，重新生成模型
             while(flag){
                 flag = false;
+                //生成模型类型
                 this.cells[i][j].init(this.getRandomCellType());
                 let result = this.checkPoint(j, i)[0];
                 if(result.length > 2){
@@ -41,6 +45,7 @@ GameModel.prototype.init = function(cellTypeNum){
 //     // to do
 // }
 //
+
 GameModel.prototype.checkPoint = function (x, y) {
     let checkWithDirection = function (x, y, direction) {
         let queue = [];
@@ -92,8 +97,9 @@ GameModel.prototype.checkPoint = function (x, y) {
     if(rowResult.length >= 3){
         result = rowResult;
     }
+
     if(colResult.length >= 3){
-        let tmp = result.concat();
+        let tmp = result.concat();  //方法用于连接两个或多个数组。  // 该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本。
         colResult.forEach(function(newEle){
             let flag = false;
             tmp.forEach(function (oldEle) {
@@ -299,17 +305,17 @@ GameModel.prototype.getCells = function(){
 // 设置种类
 // Todo 改成乱序算法
 GameModel.prototype.setCellTypeNum = function(num){
-    this.cellTypeNum = num;
-    this.cellCreateType = [];
-    for(var i = 1; i<= num;i++){
-        while(true){
-            var randomNum = Math.floor(Math.random() * CELL_BASENUM) + 1;
-            if(this.cellCreateType.indexOf(randomNum) == -1){
-                this.cellCreateType.push(randomNum);
-                break;
-            }
-        }
-    }
+   this.cellTypeNum = num;
+   this.cellCreateType = [];
+   for (var i = 1; i <= num; i++){
+       while (true){
+           var randomNum = Math.floor(Math.random() * CELL_BASENUM) + 1;
+           if(this.cellCreateType.indexOf(randomNum) == -1){
+               this.cellCreateType.push(randomNum);
+               break;
+           }
+       }
+   }
 }
 // 随要生成一个类型
 GameModel.prototype.getRandomCellType = function(){

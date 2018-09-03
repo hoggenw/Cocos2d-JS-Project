@@ -22,7 +22,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        //this.model = null;
+        this.model = null;
         this.isSelect = false;
     },
     initWithModel: function(model){
