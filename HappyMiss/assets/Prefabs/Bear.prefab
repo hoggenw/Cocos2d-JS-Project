@@ -168,7 +168,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "92SxX5NAdNoY9tFLl0DMlt"
+    "_id": "ccia2dx6dHQpvTgaJOo+qH"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -207,7 +207,7 @@
       }
     ],
     "playOnLoad": false,
-    "_id": "b7n0KZpRZJ87CQzVw5mwHW"
+    "_id": "a0wY0i85hAwJOggq987/Ou"
   },
   {
     "__type__": "cc.Sprite",
@@ -237,7 +237,7 @@
     "_atlas": {
       "__uuid__": "ecd1b9c1-6f61-40c7-9be2-f932dcfa0e8c"
     },
-    "_id": "acU3WnQVtCr55NoC/dal0n"
+    "_id": "b4ICD1MChBCYWil4ToZscd"
   },
   {
     "__type__": "88523jCF/JBrKWkTE/2/eCr",
@@ -250,7 +250,7 @@
     "defaultFrame": {
       "__uuid__": "b1d789c2-36e4-46d0-9f31-e440b52f1c49"
     },
-    "_id": "31r2ZZPd9GB6rjwp0Spnmh"
+    "_id": "44r0liaFxOXpyzftMgTcau"
   },
   {
     "__type__": "cc.PrefabInfo",

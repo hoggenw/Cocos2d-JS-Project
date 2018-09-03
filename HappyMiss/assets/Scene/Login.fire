@@ -54,7 +54,7 @@
     },
     "_zIndex": 0,
     "groupIndex": 0,
-    "autoReleaseAssets": false,
+    "autoReleaseAssets": true,
     "_id": "189c9c2e-1a58-4ab5-a7cb-dcaf8d957814"
   },
   {

@@ -46,8 +46,8 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    onLoad () {
-        this.gameSceneBGMAudioId = cc.audioEngine.play(this.worldSceneBGM,true,3);
+    onLoad() {
+        this.gameSceneBGMAudioId = cc.audioEngine.play(this.worldSceneBGM, true, 3);
         this.timer = 0;
         this.beiginGame = false;
     },
@@ -56,30 +56,29 @@ cc.Class({
 
     },
 
-    onLogin: function () {
+    onLogin: function() {
         this.loadingBar.node.active = true;
         this.loginButton.node.active = false;
         this.loadingBar.progress = 0;
         this.beiginGame = true;
-
-
     },
 
-    onDestroy: function(){
+    onDestroy: function() {
         cc.audioEngine.stop(this.gameSceneBGMAudioId);
     },
 
-    update: function (dt) {
+    update: function(dt) {
         // 每帧更新计时器，超过限度还没有生成新的星星
-        if (this.beiginGame){
+        if (this.beiginGame) {
             this.loadingBar.progress = this.timer / 120;
-            if (this.timer == 120) {
+            if (this.timer === 120) {
                 var that = this;
-                cc.director.preloadScene("Game",function () {
-                    that.loadingBar.node.active = false;
-                    that.loginButton.node.active = true;
-                    cc.director.loadScene("Game");
-                },this);
+                cc.director.preloadScene("GameScene", function() {
+                    // that.loadingBar.node.active = false;
+                    // that.loginButton.node.active = true;
+                    cc.director.loadScene("GameScene");
+                }, that);
+                that.beiginGame = false;
             }
             this.timer += 1;
         }
