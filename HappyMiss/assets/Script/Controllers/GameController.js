@@ -30,9 +30,9 @@ cc.Class({
         gridScript.initWithCellModels(this.gameModel.getCells());
     },
 
-    // selectCell: function(pos){
-    //     return this.gameModel.selectCell(pos);
-    // },
+    selectCell: function(pos){
+        return this.gameModel.selectCell(pos);
+    },
     // cleanCmd: function(){
     //     this.gameModel.cleanCmd();
     // }

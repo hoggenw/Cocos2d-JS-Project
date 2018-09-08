@@ -34,10 +34,10 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        // this.setListener();
+         this.setListener();
         // this.lastTouchPos = cc.Vec2(-1, -1);
-        // this.isCanMove = true;
-        // this.isInPlayAni = false; // 是否在播放中
+         this.isCanMove = true;
+         this.isInPlayAni = false; // 是否在播放中
     },
     setController: function(controller){
         this.controller = controller;
@@ -61,52 +61,76 @@ cc.Class({
             }
         }
     },
-    // setListener: function(){
-    //     this.node.on(cc.Node.EventType.TOUCH_START, function(eventTouch){
-    //         if(this.isInPlayAni){//播放动画中，不允许点击
-    //             return true;
-    //         }
-    //         var touchPos = eventTouch.getLocation();
-    //         var cellPos = this.convertTouchPosToCell(touchPos);
-    //         if(cellPos){
-    //             var changeModels = this.selectCell(cellPos);
-    //             this.isCanMove = changeModels.length < 3;
-    //         }
-    //         else{
-    //             this.isCanMove = false;
-    //         }
-    //         return true;
-    //     }, this);
-    //     // 滑动操作逻辑
-    //     this.node.on(cc.Node.EventType.TOUCH_MOVE, function(eventTouch){
-    //         if(this.isCanMove){
-    //             var startTouchPos = eventTouch.getStartLocation ();
-    //             var startCellPos = this.convertTouchPosToCell(startTouchPos);
-    //             var touchPos = eventTouch.getLocation();
-    //             var cellPos = this.convertTouchPosToCell(touchPos);
-    //             if(startCellPos.x != cellPos.x || startCellPos.y != cellPos.y){
-    //                 this.isCanMove = false;
-    //                 var changeModels = this.selectCell(cellPos);
-    //             }
-    //         }
-    //     }, this);
-    //     this.node.on(cc.Node.EventType.TOUCH_END, function(eventTouch){
-    //         // console.log("1111");
-    //     }, this);
-    //     this.node.on(cc.Node.EventType.TOUCH_CANCEL, function(eventTouch){
-    //         // console.log("1111");
-    //     }, this);
-    // },
+    setListener: function(){
+
+        this.node.on("touchstart",function (eventTouch) {
+            if(this.isInPlayAni){//播放动画中，不允许点击
+                return true;
+            }
+            //获取鼠标位置对象，对象包含 x 和 y 属性。这个应该是世界坐标
+            var touchPos = eventTouch.getLocation();
+            var cellPos = this.convertTouchPosToCell(touchPos);
+            if(cellPos){
+                //传入网格坐标
+                var changeModels = this.selectCell(cellPos);
+                this.isCanMove = changeModels.length < 3;
+            }else {
+                this.isCanMove = false;
+            }
+            return true;
+        },this);
+        //
+        // this.node.on(cc.Node.EventType.TOUCH_START, function(eventTouch){
+        //     if(this.isInPlayAni){//播放动画中，不允许点击
+        //         return true;
+        //     }
+        //     var touchPos = eventTouch.getLocation();
+        //     var cellPos = this.convertTouchPosToCell(touchPos);
+        //     if(cellPos){
+        //         var changeModels = this.selectCell(cellPos);
+        //         this.isCanMove = changeModels.length < 3;
+        //     }
+        //     else{
+        //         this.isCanMove = false;
+        //     }
+        //     return true;
+        // }, this);
+        // 滑动操作逻辑
+        // this.node.on(cc.Node.EventType.TOUCH_MOVE, function(eventTouch){
+        //     if(this.isCanMove){
+        //         var startTouchPos = eventTouch.getStartLocation ();
+        //         var startCellPos = this.convertTouchPosToCell(startTouchPos);
+        //         var touchPos = eventTouch.getLocation();
+        //         var cellPos = this.convertTouchPosToCell(touchPos);
+        //         if(startCellPos.x != cellPos.x || startCellPos.y != cellPos.y){
+        //             this.isCanMove = false;
+        //             var changeModels = this.selectCell(cellPos);
+        //         }
+        //     }
+        // }, this);
+        // this.node.on(cc.Node.EventType.TOUCH_END, function(eventTouch){
+        //     // console.log("1111");
+        // }, this);
+        // this.node.on(cc.Node.EventType.TOUCH_CANCEL, function(eventTouch){
+        //     // console.log("1111");
+        // }, this);
+    },
     // // 根据点击的像素位置，转换成网格中的位置
-    // convertTouchPosToCell: function(pos){
-    //     pos = this.node.convertToNodeSpace(pos);
-    //     if(pos.x < 0 || pos.x >= GRID_PIXEL_WIDTH || pos.y < 0 || pos.y >= GRID_PIXEL_HEIGHT){
-    //         return false;
-    //     }
-    //     var x = Math.floor(pos.x / CELL_WIDTH) + 1;
-    //     var y = Math.floor(pos.y / CELL_HEIGHT) + 1;
-    //     return cc.p(x, y);
-    // },
+    convertTouchPosToCell: function(pos){
+        //!#zh 将一个点转换到节点 (局部) 坐标系，并加上锚点的坐标。<br/>
+        //也就是说返回的坐标是相对于节点包围盒左下角的坐标。<br/>
+        // var changePos = this.node.convertToNodeSpace(pos);
+        //转换为gridview的坐标系
+        pos = this.node.convertToNodeSpace(pos);
+        //超出范围返回false、
+        if(pos.x < 0 || pos.x >= GRID_PIXEL_WIDTH || pos.y < 0 || pos.y >= GRID_PIXEL_HEIGHT){
+            return false;
+        }
+        var x = Math.floor(pos.x / CELL_WIDTH) + 1;
+        var y = Math.floor(pos.y / CELL_HEIGHT) + 1;
+        //转换为在GridView中网格的位置
+        return cc.v2(x, y);
+    },
     // // 移动格子
     // updateView: function(changeModels){
     //     let newCellViewInfo = [];
@@ -209,24 +233,24 @@ cc.Class({
     //     }, this)));
     // },
     // // 正常击中格子后的操作
-    // selectCell: function(cellPos){
-    //     var result = this.controller.selectCell(cellPos); // 直接先丢给model处理数据逻辑
-    //     var changeModels = result[0]; // 有改变的cell，包含新生成的cell和生成马上摧毁的格子
-    //     var effectsQueue = result[1]; //各种特效
-    //     this.playEffect(effectsQueue);
-    //     this.disableTouch(this.getPlayAniTime(changeModels), this.getStep(effectsQueue));
-    //     this.updateView(changeModels);
-    //     this.controller.cleanCmd();
-    //     if(changeModels.length >= 2){
-    //         this.updateSelect(cc.p(-1,-1));
-    //         this.audioUtils.playSwap();
-    //     }
-    //     else{
-    //         this.updateSelect(cellPos);
-    //         this.audioUtils.playClick();
-    //     }
-    //     return changeModels;
-    // },
+    selectCell: function(cellPos){
+        var result = this.controller.selectCell(cellPos); // 直接先丢给model处理数据逻辑
+        var changeModels = result[0]; // 有改变的cell，包含新生成的cell和生成马上摧毁的格子
+        var effectsQueue = result[1]; //各种特效
+        this.playEffect(effectsQueue);
+        this.disableTouch(this.getPlayAniTime(changeModels), this.getStep(effectsQueue));
+        this.updateView(changeModels);
+        this.controller.cleanCmd();
+        if(changeModels.length >= 2){
+            this.updateSelect(cc.p(-1,-1));
+            this.audioUtils.playSwap();
+        }
+        else{
+            this.updateSelect(cellPos);
+            this.audioUtils.playClick();
+        }
+        return changeModels;
+    },
     // playEffect: function(effectsQueue){
     //     this.effectLayer.getComponent("EffectLayer").playEffects(effectsQueue);
     // }
